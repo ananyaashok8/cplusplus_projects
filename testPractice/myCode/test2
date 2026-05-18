@@ -1,0 +1,27 @@
+Our system has two doors: a left door and a right door. Both of them can be open or closed.
+ 
+Write a data structure that holds the open/closed information for both doors.
+Provide a way to see if both doors are currently closed.
+
+
+
+
+enum door_state {
+	close = 0;
+	open = 1;
+	unknown;
+}
+
+struct doors{
+	door_state left = 0;
+	door_state right = 0;	
+}
+
+
+// check if both are open or not
+
+bool isOpen(*doors1)
+{
+	
+	return (doors1.left & doors1.right)
+}

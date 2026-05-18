@@ -1,0 +1,8 @@
+18:39:29 **** Incremental Build of configuration Debug for project testPractice ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\test.o" "..\\myCode\\test.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -o testPractice.exe "myCode\\main.o" "myCode\\test.o" 
+
+18:39:30 Build Finished. 0 errors, 0 warnings. (took 943ms)
+

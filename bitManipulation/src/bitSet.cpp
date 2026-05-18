@@ -1,0 +1,190 @@
+/*
+ * bitSet.cpp
+ *
+ *  Created on: 13-Feb-2026
+ *      Author: Ananya
+ */
+
+
+/*
+ * Check if nth Bit is set or not
+ * num = 13, n = 2
+ * [ 1 1 0 1] = 13
+ * logic: 1 << n
+ * 	n = 1, 1<< 1 = 0010
+ * 	n = 2, 1<< 2 = 0100
+ *
+ * 	Now, use AND operation to check if its set or not
+ *    	1 1 0 1
+ * 	 &  0 1 0 0
+ *      0 1 0 0
+ *  result is > 0 hence, bit is set.
+ *
+ */
+bool isBitSet(int val, int i)
+{
+	bool isBit = false;
+
+	isBit = val & (1 << i);
+	/* using right shift
+	val >> i
+	1 1 0 1 >> 2 --> 0 0 1 1
+  	* Now, use AND operation with 1 to check if its set or not
+	*    	0 0 1 1
+	* 	 &  0 0 0 1
+	*       0 0 0 1
+	*       result is > 0 hence, bit is set.
+	*/
+
+	// isBit = (val >> i) & 1 ;
+
+	return isBit;
+}
+
+/*
+ * Set nth Bit to 1
+ * num = 9, n = 2
+ * [ 1 0 0 1] = 9
+ * logic: 1 << n
+ * 	n = 1, 1<< 1 = 0010
+ * 	n = 2, 1<< 2 = 0100
+ *
+ * 	Now, use OR operation to set ith bit 1
+ *    	1 0 0 1
+ * 	 |  0 1 0 0
+ *      1 1 0 1
+ *
+ */
+void setBit(int val, int i)
+{
+
+	val = val | (1 << i);
+
+	// using right shift
+	// val = (val >> i) | 1;
+
+}
+
+/*
+ * Clear nth Bit to 0
+ * num = 13, n = 2
+ * [ 1 1 0 1] = 13
+ * logic: 1 << n
+ * 	n = 1, 1 << 1 = ~0010 = 1101
+ * 	n = 2, 1 << 2 = ~0100 = 1011
+ *
+ * 	Now, use AND operation to clear ith bit 0
+ *    	1 1 0 1
+ * 	 &  1 0 1 1
+ *      1 0 0 1
+ *
+ */
+void clearBit(int val, int i)
+{
+
+	val = val & ~(1 << i);
+
+	// using right shift
+	// val = ~ (val >> i) & 1;
+
+}
+
+/*
+ * toggle nth Bit to 1
+ * num = 13, n = 2
+ * [ 1 1 0 1] = 13
+ * logic: 1 << n
+ * 	n = 1, 1 << 1 = 0010
+ * 	n = 2, 1 << 2 = 0100
+ *
+ * 	Now, use XOR operation to clear nth bit
+ *    	1 1 0 1
+ * 	 ^  0 1 0 0
+ *      1 0 0 1
+ *
+ */
+void toggleBit(int val, int i)
+{
+
+	val = val ^ (1 << i);
+
+	// using right shift
+	// val = (val >> i) ^ 1;
+
+}
+
+/*
+ * remove last set bit (right most)
+ * N =   16 -> 000 1 0000
+ * N-1 = 15 -> 000 0 1111
+ *
+ * N =   40 -> 0010 1 000
+ * N-1 = 49 -> 0010 0 111
+ *
+ * N =   84 -> 0101 0 1 00
+ * N-1 = 83 -> 0101 0 0 11
+ *
+ *
+ * using this logic, N & N-1
+ * N =   16 -> 000 1 0000
+ * N-1 = 15 -> 000 0 1111
+ *          &  000 0 0000
+ *
+ */
+void removeRightMostSetBit(int val, int i)
+{
+	val = val & (val - 1);
+}
+
+
+/*
+ * is the number power of 2
+ * N = 16 -> 0001 0000 ----> yes
+ * N = 13 -> 0000 1101 ----> no
+ * N = 9  -> 0000 1001 ----> no
+ * numbers with only one set bit are power by 2
+ *
+ * using this logic, N & N-1
+ * N =   16 -> 0001 0000
+ * N-1 = 15 -> 0000 1111
+ *          &  0000 0000 = 0 then it is power of two
+ *
+ * N =   9 ->  0000 1001
+ * N-1 = 8 ->  0000 1000
+ *          &  0000 1000 != then it is not power of two
+ *
+ */
+
+bool isPowerOf2(int val)
+{
+	bool isPowerof2 = false;
+
+    if((val & val-1) == 0)
+    	isPowerof2 = true;
+
+	return isPowerof2;
+
+}
+
+
+/*
+ * Count no. of set bits
+ * N = 16 -> 0001 0000 ----> 1
+ * N = 13 -> 0000 1101 ----> 3
+ * N = 9  -> 0000 1001 ----> 2
+ *
+ */
+
+int countOfSetBits(int val)
+{
+	int count = 0;
+
+    while ( val > 0)
+    {
+    	count = count + (val % 2); // 13,6,3,1 % 2 -> 1,0,1,1
+    	val = val/2;
+    }
+
+	return count;
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;bitManipulation/src/binaryDecimal&apos; to &apos;binaryDecimal.cpp&apos;" description="Rename resource &apos;binaryDecimal&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/binaryDecimal" name="binaryDecimal.cpp" stamp="1770910963229" updateReferences="true"/>
+</session>

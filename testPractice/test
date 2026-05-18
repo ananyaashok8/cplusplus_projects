@@ -1,0 +1,52 @@
+  
+  
+ input:
+  a = 0xDEADBEEF
+  m = 4
+  n = 7
+  x = 0xA
+  
+ expected output:
+  a = 0xDEADBE'A'F
+
+  mask = ((1 << (n - m + 1)) -1) << m // 0x00000_00F0
+ 
+a = (a & () ) & (x << (n-m)); 	
+ 
+	a = 0xDEADBEEF
+mask  = 0x000000F0
+
+    
+ 
+ 
+ 
+ How many bits to be flipped to get a from b
+ 
+	 a = 11011
+	 b = 10101
+mask &   10001
+     ~   01110
+     ^   10101
+         11011
+ 
+mask2 = (~(a & b)) ^ b)
+
+No. of bit: 
+ 
+	 a = 11011
+	 b = 10101
+	 ^
+val=     01110
+
+	count = 0;
+
+	while(val > 0)
+	{		
+		count = count + (val % 2);
+		val = val % 2;	
+	
+	}
+    
+    
+ 
+ 

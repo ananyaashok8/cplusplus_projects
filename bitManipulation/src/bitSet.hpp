@@ -1,0 +1,25 @@
+/*
+ * bitSet.hpp
+ *
+ *  Created on: 13-Feb-2026
+ *      Author: 91819
+ */
+
+
+
+#include "bitSet.cpp"
+
+#ifndef BITSET_HPP_
+#define BITSET_HPP_
+
+#include <string>
+
+bool isBitSet(int val, int i);
+void setBit(int val, int i);
+int countOfSetBits(int val);
+bool isPowerOf2(int val);
+void removeRightMostSetBit(int val, int i);
+void toggleBit(int val, int i);
+void clearBit(int val, int i);
+
+#endif /* BITSET_HPP_ */

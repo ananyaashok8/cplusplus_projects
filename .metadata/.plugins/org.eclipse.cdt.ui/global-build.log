@@ -1,0 +1,2 @@
+12:03:52 **** Clean-only build of configuration Debug for project bitManipulation ****
+rm -rf src/binaryDecimal.o src/swap.d src/main.o src/binaryDecimal.d src/bitManipulation.d src/bitSet.o src/bitManipulation.o src/main.d src/bitSet.d src/swap.o bitManipulation.exe 

@@ -1,0 +1,34 @@
+17:12:02 **** Rebuild of configuration Debug for project CircularBuffer ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CBuffer.o" "..\\src\\CBuffer.cpp" 
+..\src\CBuffer.cpp: In function 'bool writeSensorValue(SensorBuffer*, int)':
+..\src\CBuffer.cpp:29:16: warning: 'val' is used uninitialized [-Wuninitialized]
+   29 |         return val;
+      |                ^~~
+..\src\CBuffer.cpp: In function 'bool readSensorValue(SensorBuffer*, int*)':
+..\src\CBuffer.cpp:35:16: warning: 'val' is used uninitialized [-Wuninitialized]
+   35 |         return val;
+      |                ^~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CircularBuffer.o" "..\\src\\CircularBuffer.cpp" 
+In file included from ..\src\CircularBuffer.cpp:10:
+..\src\CBuffer.cpp: In function 'bool writeSensorValue(SensorBuffer*, int)':
+..\src\CBuffer.cpp:29:16: warning: 'val' is used uninitialized [-Wuninitialized]
+   29 |         return val;
+      |                ^~~
+..\src\CBuffer.cpp: In function 'bool readSensorValue(SensorBuffer*, int*)':
+..\src\CBuffer.cpp:35:16: warning: 'val' is used uninitialized [-Wuninitialized]
+   35 |         return val;
+      |                ^~~
+g++ -o CircularBuffer.exe "src\\CBuffer.o" "src\\CircularBuffer.o" 
+C:/PROGRA~1/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CircularBuffer.o: in function `initBuffer(SensorBuffer*)':
+C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:22: multiple definition of `initBuffer(SensorBuffer*)'; src\CBuffer.o:C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:22: first defined here
+C:/PROGRA~1/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CircularBuffer.o: in function `writeSensorValue(SensorBuffer*, int)':
+C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:27: multiple definition of `writeSensorValue(SensorBuffer*, int)'; src\CBuffer.o:C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:27: first defined here
+C:/PROGRA~1/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CircularBuffer.o: in function `readSensorValue(SensorBuffer*, int*)':
+C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:33: multiple definition of `readSensorValue(SensorBuffer*, int*)'; src\CBuffer.o:C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:33: first defined here
+C:/PROGRA~1/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CircularBuffer.o: in function `printBufferStatus(SensorBuffer const*)':
+C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:39: multiple definition of `printBufferStatus(SensorBuffer const*)'; src\CBuffer.o:C:\Users\91819\Documents\CVs\2025\CV\CodePractice\CircularBuffer\Debug/../src/CBuffer.cpp:39: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+17:12:04 Build Failed. 8 errors, 4 warnings. (took 1s.558ms)
+
