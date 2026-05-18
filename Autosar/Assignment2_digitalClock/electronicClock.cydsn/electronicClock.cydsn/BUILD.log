@@ -1,0 +1,101 @@
+--------------- Build Started: 07/13/2022 14:22:34 Project: electronicClock, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\91819\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\electronicClock.cyprj -d CY8C5888LTI-LP097 -s C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0065: information: Analog terminal "vdac_ref" on ADC_SAR_SEQ_v2_10 is unconnected.
+ * C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_v2_10\PSoC5\ADC_SAR_SEQ_v2_10.cysch (Signal: vdac_ref)
+ * C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_v2_10\PSoC5\ADC_SAR_SEQ_v2_10.cysch (Shape_798)
+ * C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_v2_10\PSoC5\ADC_SAR_SEQ_v2_10.cysch (Shape_885)
+ADD: fit.M0032: warning: Clock Warning: (TFT_SPI_IntClock's accuracy range '72 MHz +/- 0.25%, (71.82 MHz - 72.18 MHz)' is not within the specified tolerance range '66 MHz +/- 5%, (62.7 MHz - 69.3 MHz)'.).
+ * C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SPI_Master_v2_50\SPI_Master_v2_50.cysch (Instance:IntClock)
+ * C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\electronicClock.cydwr (TFT_SPI_IntClock)
+HDL Generation...
+Synthesis...
+Tech Mapping...
+Analog Placement...
+Info: apr.M0002: Analog signal "Net_1924" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1943" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1973" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1952" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1953" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1976" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1956" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1957" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1992" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1960" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1961" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1993" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1902" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1903" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1963" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1906" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1907" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1964" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1910" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1911" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1965" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1914" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1915" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1966" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1918" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1919" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1967" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1923" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1925" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1968" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1928" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1929" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1969" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1932" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1933" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1970" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1936" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1937" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1971" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1940" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1941" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1972" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1945" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1947" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1974" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1950" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1975" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1977" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1978" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1979" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1980" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1981" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1982" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1983" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1984" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1985" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1986" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1987" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1988" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1989" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1990" is connected to one terminal only. (App=cydsfit)
+Info: apr.M0002: Analog signal "Net_1991" is connected to one terminal only. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 35% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 80% done. (App=cydsfit)
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+Warning: sta.M0019: electronicClock_timing.html: Warning-1366: Setup time violation found in a path from clock ( TFT_SPI_IntClock ) to clock ( TFT_SPI_IntClock ). (File=C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\electronicClock_timing.html)
+API Generation...
+Dependency Generation...
+Cleanup...
+The compile step is up to date, no work needs to be done.
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\electronicClock.a .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_activate.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_alcancel.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_alget.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_algetbase.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_alsetabs.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_alsetrel.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_altick.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_chaintas.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_evclear.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_evget.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_evset.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_evwait.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_force_schedule.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_getcountervalue.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_getelapsedvalue.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gettaskid.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gettaskstate.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_iparam.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_irqendin.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_lockres.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_lookup.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_rq_exchg.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_rq_first.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_rq_inser.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_schedule.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_semgetvalue.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_sempost.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_semtrywait.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_semwait.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_shtdown.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_startos.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_terminat.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_thendin.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_tnterm.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_tstub.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_ulockallres.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_ulockres.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_cortex_mx_ee_context.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_cortex_mx_ee_system_timer.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_cortex_mx_ee_utils.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_common_ee_hal_structs.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_eecfg.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_A.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_B.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_C.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_D.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_E.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_F.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_G.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_DP.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_SELECT.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_reg.o .\CortexM3\ARM_GCC_541\Debug\SEVEN_reg_PM.o .\CortexM3\ARM_GCC_541\Debug\BUTTON_1.o .\CortexM3\ARM_GCC_541\Debug\isr_Button.o .\CortexM3\ARM_GCC_541\Debug\BUTTON_2.o .\CortexM3\ARM_GCC_541\Debug\LED_red.o .\CortexM3\ARM_GCC_541\Debug\LED_yellow.o .\CortexM3\ARM_GCC_541\Debug\LED_green.o .\CortexM3\ARM_GCC_541\Debug\UART_LOG.o .\CortexM3\ARM_GCC_541\Debug\UART_LOG_PM.o .\CortexM3\ARM_GCC_541\Debug\UART_LOG_INT.o .\CortexM3\ARM_GCC_541\Debug\UART_LOG_BOOT.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_red.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_red_PM.o .\CortexM3\ARM_GCC_541\Debug\PWM_Clock.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_green.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_green_PM.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_blue.o .\CortexM3\ARM_GCC_541\Debug\RGB_PWM_blue_PM.o .\CortexM3\ARM_GCC_541\Debug\RGB_R.o .\CortexM3\ARM_GCC_541\Debug\RGB_G.o .\CortexM3\ARM_GCC_541\Debug\RGB_B.o .\CortexM3\ARM_GCC_541\Debug\USBUART.o .\CortexM3\ARM_GCC_541\Debug\USBUART_audio.o .\CortexM3\ARM_GCC_541\Debug\USBUART_boot.o .\CortexM3\ARM_GCC_541\Debug\USBUART_cdc.o .\CortexM3\ARM_GCC_541\Debug\USBUART_cls.o .\CortexM3\ARM_GCC_541\Debug\USBUART_descr.o .\CortexM3\ARM_GCC_541\Debug\USBUART_drv.o .\CortexM3\ARM_GCC_541\Debug\USBUART_episr.o .\CortexM3\ARM_GCC_541\Debug\USBUART_hid.o .\CortexM3\ARM_GCC_541\Debug\USBUART_pm.o .\CortexM3\ARM_GCC_541\Debug\USBUART_std.o .\CortexM3\ARM_GCC_541\Debug\USBUART_vnd.o .\CortexM3\ARM_GCC_541\Debug\USBUART_midi.o .\CortexM3\ARM_GCC_541\Debug\USBUART_msc.o .\CortexM3\ARM_GCC_541\Debug\BUTTON_JOYSTICK.o .\CortexM3\ARM_GCC_541\Debug\isr_Button_Joystick.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_X.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_Y.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_PM.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_INT.o .\CortexM3\ARM_GCC_541\Debug\TFT_SPI.o .\CortexM3\ARM_GCC_541\Debug\TFT_SPI_PM.o .\CortexM3\ARM_GCC_541\Debug\TFT_SPI_INT.o .\CortexM3\ARM_GCC_541\Debug\TFT_SCL.o .\CortexM3\ARM_GCC_541\Debug\TFT_DC.o .\CortexM3\ARM_GCC_541\Debug\TFT_RES.o .\CortexM3\ARM_GCC_541\Debug\TFT_CS.o .\CortexM3\ARM_GCC_541\Debug\TFT_LED.o .\CortexM3\ARM_GCC_541\Debug\TFT_SDA.o .\CortexM3\ARM_GCC_541\Debug\TFT_BackLight.o .\CortexM3\ARM_GCC_541\Debug\TFT_BackLight_PM.o .\CortexM3\ARM_GCC_541\Debug\CLK_LED.o .\CortexM3\ARM_GCC_541\Debug\UART_LOG_IntClock.o .\CortexM3\ARM_GCC_541\Debug\USBUART_Dm.o .\CortexM3\ARM_GCC_541\Debug\USBUART_Dp.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_SAR.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_SAR_INT.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_SAR_PM.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_IntClock.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_TempBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_FinalBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\JOYSTICK_ADC_XY_IRQ.o .\CortexM3\ARM_GCC_541\Debug\TFT_SPI_IntClock.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gnu_change_context_isr.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gnu_irq_stack.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gnu_multi_context.o .\CortexM3\ARM_GCC_541\Debug\ErikaOS_1_ee_gnu_oo.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\electronicClock.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\CortexM3\ARM_GCC_541\Debug\electronicClock.elf .\CortexM3\ARM_GCC_541\Debug\swc_clock.o .\CortexM3\ARM_GCC_541\Debug\tsk_control.o .\CortexM3\ARM_GCC_541\Debug\tsk_io.o .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\statemachine.o .\CortexM3\ARM_GCC_541\Debug\tsk_tft.o .\CortexM3\ARM_GCC_541\Debug\logging.o .\CortexM3\ARM_GCC_541\Debug\tft.o .\CortexM3\ARM_GCC_541\Debug\trcKernelPort.o .\CortexM3\ARM_GCC_541\Debug\trcSnapshotRecorder.o .\CortexM3\ARM_GCC_541\Debug\trcStreamingRecorder.o .\CortexM3\ARM_GCC_541\Debug\button.o .\CortexM3\ARM_GCC_541\Debug\joystick.o .\CortexM3\ARM_GCC_541\Debug\led.o .\CortexM3\ARM_GCC_541\Debug\seven.o .\CortexM3\ARM_GCC_541\Debug\rte.o .\CortexM3\ARM_GCC_541\Debug\sc_clock.o .\CortexM3\ARM_GCC_541\Debug\sc_clock_type.o .\CortexM3\ARM_GCC_541\Debug\sc_event.o .\CortexM3\ARM_GCC_541\Debug\sc_event_type.o .\CortexM3\ARM_GCC_541\Debug\sp_common.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\electronicClock.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/electronicClock.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -C C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\CortexM3\ARM_GCC_541\Debug\electronicClock.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+cyelftool.exe -S C:\Users\91819\Documents\HDA_Sem2\EAA\Assignments\Assignment2_digitalClock\electronicClock.cydsn\electronicClock.cydsn\CortexM3\ARM_GCC_541\Debug\electronicClock.elf
+Flash used: 16736 of 262144 bytes (6.4%).
+SRAM used: 6033 of 65536 bytes (9.2%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 07/13/2022 14:23:08 ---------------
